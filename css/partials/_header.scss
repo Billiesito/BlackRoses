@@ -1,0 +1,37 @@
+header {
+    background-color: $color1;
+
+    .nav {
+        display: flex;
+
+        .logo {
+            width: 15vh;
+        }
+        
+        .menu {
+            list-style-type: none;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            padding-inline: 10rem;
+
+            .menu_item {
+                margin-block: 1.5rem;
+                margin-inline: 2rem;
+                padding-inline: 3rem;
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $color5;
+                }
+            }
+            
+        }
+    }
+}

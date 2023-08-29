@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  background-image: url("../images/fondo.webp");
+}
+
+header {
+  background-color: #866A46;
+}
+header .nav {
+  display: flex;
+}
+header .nav .logo {
+  width: 15vh;
+}
+header .nav .menu {
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-inline: 10rem;
+}
+header .nav .menu .menu_item {
+  margin-block: 1.5rem;
+  margin-inline: 2rem;
+  padding-inline: 3rem;
+  display: flex;
+}
+header .nav .menu .menu_item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: #090A08;
+}
+
+.hero {
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .p1 {
+  color: white;
+  font-size: 2rem;
+  margin-block: 3rem;
+}
+
+.container_imagen {
+  margin-inline: 23rem;
+  margin-block: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.container_imagen .icon_2 {
+  font-size: 5rem;
+  color: white;
+  padding-right: 2rem;
+}
+.container_imagen .p_imagen {
+  color: white;
+}
+
+.subastas {
+  margin-block: 7rem;
+  margin-inline: 20rem;
+}
+.subastas .parrafo_subasta {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem 0 7rem 0;
+}
+.subastas .grilla {
+  width: 100%;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.subastas .grilla .celda1 {
+  background-image: url("../../images/calavera.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.subastas .grilla .celda3 {
+  background-image: url("../../images/fragmento-einstein.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.subastas .grilla .celda5 {
+  background-image: url("../../images/estatua.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.subastas .grilla .celda7 {
+  background-image: url("../../images/tiburon.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.subastas .grilla .celda_p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.subastas .grilla .celda {
+  margin: 1rem;
+}
+
+.ventas {
+  margin-block: 7rem;
+  margin-inline: 20rem;
+}
+.ventas .parrafo_venta {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem 0 7rem 0;
+}
+.ventas .grillaa {
+  width: 100%;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.ventas .grillaa .celdaa1 {
+  background-image: url("../../images/f1-mick.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.ventas .grillaa .celdaa3 {
+  background-image: url("../../images/salvator_mundi.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.ventas .grillaa .celdaa5 {
+  background-image: url("../../images/illustrator.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.ventas .grillaa .celdaa7 {
+  background-image: url("../../images/f1-fangio.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+}
+.ventas .grillaa .celdaa_p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.ventas .grillaa .celdaa {
+  margin: 1rem;
+}
+
+.preguntas {
+  margin-block: 8rem;
+  margin-inline: 25rem;
+}
+.preguntas .pregunta {
+  color: white;
+  border: solid black 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin-block: 3rem;
+  font-size: 1.5rem;
+}
+.preguntas .respuesta {
+  margin-top: 1rem;
+}
+
+.container_nosotros {
+  margin-inline: 25rem;
+  margin-block: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container_nosotros .imagen_nosotros {
+  width: 70vh;
+}
+.container_nosotros .parrafo_nosotros {
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.footer {
+  height: 20vh;
+  background-color: #866A46;
+  display: flex;
+}
+.footer .redes {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.footer .redes .red {
+  font-size: 4rem;
+  display: flex;
+  padding: 1rem;
+}
+.footer .redes a {
+  text-decoration: none;
+  color: #090A08;
+}
+.footer .info {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .info_icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.footer .info_item {
+  display: flex;
+  padding-block: 0.5rem;
+  align-items: center;
+}/*# sourceMappingURL=estilos.css.map */

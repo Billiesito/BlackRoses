@@ -1,0 +1,41 @@
+.footer {
+    height: 20vh;
+    background-color: $color1;
+    display: flex;
+
+    .redes {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+
+        .red {
+            font-size: 4rem;
+            display: flex;
+            padding: 1rem;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $color5;
+        }
+    }
+
+    .info {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+       .info_icon {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+       }
+
+        .info_item {
+            display: flex;
+            padding-block: 0.5rem;
+            align-items: center;
+    }
+}

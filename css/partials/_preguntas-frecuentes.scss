@@ -1,0 +1,17 @@
+.preguntas {
+    margin-block: 8rem;
+    margin-inline: 25rem;
+
+    .pregunta {
+        color: white;
+        border: solid black 1px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        margin-block: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .respuesta {
+        margin-top: 1rem;
+    }
+}

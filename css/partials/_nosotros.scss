@@ -1,0 +1,18 @@
+.container_nosotros {
+    margin-inline: 25rem;
+    margin-block: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .imagen_nosotros {
+        width: 70vh;
+    }
+
+    .parrafo_nosotros {
+        color: white;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+}
