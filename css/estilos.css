@@ -18,30 +18,59 @@ header .nav {
 }
 header .nav .logo {
   width: 15vh;
+  margin-left: 2rem;
 }
 header .nav .menu {
   list-style-type: none;
   height: 100%;
-  width: 100%;
+  width: 100vh;
   display: flex;
-  padding-inline: 10rem;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-left: 8rem;
 }
 header .nav .menu .menu_item {
-  margin-block: 1.5rem;
-  margin-inline: 2rem;
-  padding-inline: 3rem;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  width: 12rem;
+  margin: 1.5rem 2rem 1.5rem 2rem;
   display: flex;
+  border: solid #5F3A1C;
+}
+header .nav .menu .menu_item :hover {
+  background-color: #5F3A1C;
+  border: solid #B7A57B;
+  color: white;
 }
 header .nav .menu .menu_item a {
   text-decoration: none;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   color: #090A08;
 }
-
+header .nav .menu .menu_item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+header .nav .menu .menu_item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+header .nav .menu .menu_item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+header .nav .menu .menu_item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .hero {
   background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
@@ -53,7 +82,6 @@ header .nav .menu .menu_item a {
   align-items: center;
   justify-content: center;
   font-size: 4.5rem;
-  background-color: black;
 }
 
 .container {
@@ -82,6 +110,23 @@ header .nav .menu .menu_item a {
   color: white;
 }
 
+.aclaracion {
+  margin: 7rem 30rem 7rem 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aclaracion .warning {
+  font-size: 7rem;
+  color: red;
+}
+.aclaracion .aclaracion_parrafo {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
 .subastas {
   margin-block: 7rem;
   margin-inline: 20rem;
@@ -99,28 +144,28 @@ header .nav .menu .menu_item a {
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .subastas .grilla .celda1 {
-  background-image: url("../../images/calavera.jpg");
+  background-image: url("../images/calavera.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: solid white 1px;
 }
 .subastas .grilla .celda3 {
-  background-image: url("../../images/fragmento-einstein.jpg");
+  background-image: url("../images/fragmento-einstein.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: solid white 1px;
 }
 .subastas .grilla .celda5 {
-  background-image: url("../../images/estatua.jpg");
+  background-image: url("../images/estatua.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: solid white 1px;
 }
 .subastas .grilla .celda7 {
-  background-image: url("../../images/tiburon.jpg");
+  background-image: url("../images/tiburon.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -152,28 +197,28 @@ header .nav .menu .menu_item a {
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .ventas .grillaa .celdaa1 {
-  background-image: url("../../images/f1-mick.jpg");
+  background-image: url("../images/f1-mick.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: solid white 1px;
 }
 .ventas .grillaa .celdaa3 {
-  background-image: url("../../images/salvator_mundi.jpg");
+  background-image: url("../images/salvator_mundi.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: solid white 1px;
 }
 .ventas .grillaa .celdaa5 {
-  background-image: url("../../images/illustrator.jpg");
+  background-image: url("../images/illustrator.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: solid white 1px;
 }
 .ventas .grillaa .celdaa7 {
-  background-image: url("../../images/f1-fangio.jpg");
+  background-image: url("../images/f1-fangio.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

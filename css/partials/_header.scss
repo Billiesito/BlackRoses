@@ -6,24 +6,36 @@ header {
 
         .logo {
             width: 15vh;
+            margin-left: 2rem;
         }
         
         .menu {
             list-style-type: none;
             height: 100%;
-            width: 100%;
+            width: 100vh;
             display: flex;
-            padding-inline: 10rem;
+            justify-content: space-around;
+            align-items: stretch;
+            margin-left: 8rem;
 
             .menu_item {
-                margin-block: 1.5rem;
-                margin-inline: 2rem;
-                padding-inline: 3rem;
+                -webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+                animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+                width: 12rem;
+                margin: 1.5rem 2rem 1.5rem 2rem;
                 display: flex;
+                border: solid $color3;
+
+                & :hover {
+                    background-color: $color3;
+                    border: solid $color2;
+                    color: white;
+                }
 
                 a {
                     text-decoration: none;
                     display: flex;
+                    flex: 1;
                     align-items: center;
                     justify-content: center;
                     font-family: $font1;
@@ -31,7 +43,15 @@ header {
                     color: $color5;
                 }
             }
+
+            @for $item from 1 through 4 {
+                .menu_item:nth-child(#{$item}) {
+                    animation-delay: $item*0.1s;
+                }
+            }
             
         }
     }
 }
+
+ @-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
